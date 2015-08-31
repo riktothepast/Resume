@@ -27,15 +27,13 @@
         </div>
 
         <div class="executive-summary">
-          <p>This is the executive summary. You should write a few brief, concise, and meaningful sentences about yourself from a professional context, and your immediate career goals. Make the length appropriate for your needs, but K.I.S.S.</p>
+          <p>.</p>
         </div>
+          <p class="email">Contact:</p>
 
-        {% if site.resume_looking_for_work == 'yes' %}
-        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button">Contact me</a>
-        {% elsif site.resume_looking_for_work == 'no' %}
-        <a class="contact-button not-looking">I'm not looking for work right now.</a>
-        {% else %}
-        {% endif %}
+          <p class="email">rik@502studios.net</p>
+          <p class="phine">(502) 4001-5171</p>
+
 
       </header>
 
@@ -46,33 +44,44 @@
           <h2>Experience</h2>
         </header>
 
-        <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+   <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
         <div class="resume-item">
-          <h3 class="resume-item-title">Springfield Nuclear Power Plant</h3>
-          <h4 class="resume-item-details">Safety Inspector &bull; Nov, 1980 &mdash; Present</h4>
-          <p class="resume-item-copy">Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points:</p>
-          <ul class="resume-item-list">
-            <li>Ate lots of donuts</li>
-            <li>Fell asleep rarely</li>
-            <li>Left promptly at end of day (sometimes earlier)</li>
-          </ul>
-          <p class="resume-item-copy">If you're going to copy paste markup, or edit it, just be sure to keep the appropriate classnames on your new elements for styling purposes.</p>
+          <h3 class="resume-item-title">Mighty Strike Team : Pocket Missions - 502 Studios</h3>
+          <h4 class="resume-item-details">Game Developer/Pixel Artist/Android Backend &bull; January, 2015 &mdash; August 2015</h4>
+          <p class="resume-item-copy">2D single-screen shooter with and arcade feel.</p>
+          <p class="resume-item-copy">The game is scheduled for a September 2015 release. http://www.502studios.net/MST.html</p>
 
         </div><!-- end of resume-item -->
 
         <!-- another resume item -->
         <div class="resume-item">
-          <h3 class="resume-item-title">Sir Putt-A-Lot's Merrie Olde Fun Centre</h3>
-          <h4 class="resume-item-details">Windmill Crank Operator &bull; Jun, 1978 &mdash; Sept, 1979</h4>
-          <p class="resume-item-copy">If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.</p>
+          <h3 class="resume-item-title">Love Letter The Video Game - Rho Sigma, S.A.</h3>
+          <h4 class="resume-item-details">Lead Game Developer [Single Player campaign] &bull; June, 2014 &mdash; June, 2015</h4>
+          <p class="resume-item-copy">Transition from a physical card game to a handled game.</p>
 
         </div><!-- end of resume-item -->
 
         <!-- by now you're getting the picture... -->
         <div class="resume-item">
-          <h3 class="resume-item-title">Simpson Lazer Tag</h3>
-          <h4 class="resume-item-details">Front Desk Attendant &bull; Jun, 1975 &mdash; May, 1978</h4>
-          <p class="resume-item-copy">Boy, when Marge first told me she was going to the Police Academy, I thought it would be fun and exciting, you know, like the movie... Spaceballs. But instead, it's been painful and disturbing, like the movie Police Academy.</p>
+          <h3 class="resume-item-title">Album Digital Claro 2014</h3>
+          <h4 class="resume-item-details">FrontEnd/BackEnd developer&bull; May, 2014 &mdash; June 2014</h4>
+          <p class="resume-item-copy">Made for the Fifa 2014 Soccer World Cup, developed with Express and Scala.</p>
+
+        </div><!-- end of resume-item -->
+
+                <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+        <div class="resume-item">
+          <h3 class="resume-item-title">Gesto: The Gesture Challenge - Huxi Games</h3>
+          <h4 class="resume-item-details">Game Developer/Android Backend &mdash; May 2014</h4>
+          <p class="resume-item-copy">A game of reflexes, do gestures to advance in a race against time.</p>
+
+        </div><!-- end of resume-item -->
+
+                        <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+        <div class="resume-item">
+          <h3 class="resume-item-title">Escape The Mine - 502 Studios</h3>
+          <h4 class="resume-item-details">Game Developer/Android Backend &mdash; 2012</h4>
+          <p class="resume-item-copy">A sokoban-like 2D puzzle game, made with PlayN.</p>
 
         </div><!-- end of resume-item -->
 
@@ -80,6 +89,7 @@
       <!-- end Experience -->
 
       {% if site.resume_section_education %}
+      
       <!-- begin Education -->
       <section class="content-section">
 
@@ -88,13 +98,13 @@
         </header>
 
         <div class="resume-item">
-          <h3 class="resume-item-title">Springfield College</h3>
-          <h4 class="resume-item-details">Associates Degree, Business Management &bull; 1984 &mdash; 1986</h4>
-          <p class="resume-item-copy">If you had any meaningful roles at college, feel free to write about them here.</p>
+          <h3 class="resume-item-title">Universidad de San Carlos de Guatemala</h3>
+          <h4 class="resume-item-details">Ingeniería en Ciencias y Sistemas &bull; 2007 &mdash; 2015</h4>
         </div>
 
       </section>
       <!-- end Education -->
+      
       {% endif %}
 
       {% if site.resume_section_projects %}
@@ -102,20 +112,16 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Projects</h2>
+          <h2>Game Jams</h2>
         </header>
 
         <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://donutlocator.io">donutfinder.io</a></h3>
-          <h4 class="resume-item-details">Founder & Primary Developer &bull; 2012 &mdash; Present</h4>
-          <p class="resume-item-copy">Donut Locator is an open source node/ember app that lets users find donuts within a defined radius from their home.</p>
+          <h3 class="resume-item-title">Ludum Dare</h3>
+          <h4 class="resume-item-details">48 h Compo or 72 h jam </h4>
+          I have done a couple of games for the Ludum Dare, you can see my entries here:
+          http://ludumdare.com/compo/author/riktothepast/
         </div>
 
-        <div class="resume-item">
-          <h3 class="resume-item-title">Springfield Donut Eater's User Group</h3>
-          <h4 class="resume-item-details">Co-Founder & Organizer &bull; 2007 &mdash; Present</h4>
-          <p class="resume-item-copy">DEUG is a local monthly meetup in Springfield where we share all the latest tips and tricks for dat donut lifestyle. I organize the group, and typically eat most of the donuts.</p>
-        </div>
 
       </section>
       <!-- end Projects -->
@@ -130,19 +136,23 @@
         </header>
 
         <div class="resume-item">
-          <h4 class="resume-item-details">Donut design</h4>
-          <p class="resume-item-copy">Sprinkle art, icing design, eclair management, taste testing, donut/coffee pairing research</p>
+          <h4 class="resume-item-details">Operating Systems</h4>
+          <p class="resume-item-copy">Proficient in the usage of </p>
+        <ul>
+            <li>Microsoft Windows.</li>
+            <li>Mac OS X (10.4 and above).</li>
+            <li>Debian-based Linux.</li>
+          </ul>
         </div>
 
         <div class="resume-item">
-          <h4 class="resume-item-details">Craft beer brewing</h4>
-          <p class="resume-item-copy">Hops inspection, brew testing, distribution management, bottle label design, festival and event management</p>
+          <h4 class="resume-item-details">Languages</h4>
+          <ul>
+            <li>Native Spanish.</li>
+            <li>Technical level English.</li>
+          </ul>
         </div>
 
-        <div class="resume-item">
-          <h4 class="resume-item-details">Family leadership</h4>
-          <p class="resume-item-copy">Bread winning, conflict resolution, couch inspection, TV longevity testing</p>
-        </div>
 
       </section>
       <!-- end Skills -->
@@ -153,77 +163,30 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Recognition</h2>
+          <h2>Teaching Experience </h2>
         </header>
 
         <div class="resume-item">
-          <h3 class="resume-item-title">Springfield Nuclear Power Plant</h3>
-          <h4 class="resume-item-details">Outstanding Achievement &bull; 2010</h4>
-          <p class="resume-item-copy">Awarded for stopping a nuclear meltdown, even though I also started it.</p>
+          <h3 class="resume-item-title">Universidad de San Carlos de Guatemala</h3>
+                    <h4 class="resume-item-details">Introducción a la Computación y Programación I</h4>
+                              <h2 class="resume-item-details">Academic Tutor &bull; 2013 - 2014</h2>
+          <p class="resume-item-copy">Teaching of introductory level programming course, using Java as the base language.</p>
         </div>
 
         <div class="resume-item">
-          <h3 class="resume-item-title">Duff Beer Customer of the year</h3>
-          <h4 class="resume-item-details">1997 &mdash; 2001, 2003, 2008 &mdash; 2012</h4>
-          <p class="resume-item-copy">Honored by <a href="https://en.wikipedia.org/wiki/Duff_Beer">Duff Beer</a> for being an outstanding customer several years straight. Qualifications included most beer consumed at a bar, most beer purchased, and most beer ralphed.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">Moe's Patron of the Month</h3>
-          <h4 class="resume-item-details">12/2001, 8/2004</h4>
-          <p class="resume-item-copy">Specifically this prestigious awarded twice for stopping a robber with my belly.</p>
+          <h3 class="resume-item-title">Universidad de San Carlos de Guatemala</h3>
+                              <h4 class="resume-item-details">Arquitectura de Computadores y Ensambladores II</h4>
+                                        <h4 class="resume-item-details">Academic Tutor &bull; 2015 </h4>
+          <p class="resume-item-copy">Introduction to Blender 3D modeling and Unity 2D/3D Game Development.</p>
         </div>
 
       </section>
       <!-- end Recognition -->
       {% endif %}
 
-      {% if site.resume_section_associations %}
-      <!-- begin Associations -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Associations</h2>
-        </header>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://beerfortheworld.com">Beer for the World</a></h3>
-          <h4 class="resume-item-details">Volunteer &bull; 2008 &mdash; Present</h4>
-          <p class="resume-item-copy">Organized fund drives and participated in fundraising events for the benefit of families in third world countries without proper access to malt beverages.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">Springfield Nuclear Workers Labor Union</h3>
-          <h4 class="resume-item-details">Member in Good Standin &bull; 1994 &mdash; Present</h4>
-          <p class="resume-item-copy">Founding member of the local nuclear workers labor union.</p>
-        </div>
-
-      </section>
-      <!-- end Associations -->
-      {% endif %}
-
-      {% if site.resume_section_links %}
-      <!-- begin Links -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Additional Links</h2>
-        </header>
-
-        <div class="resume-item">
-          <ul class="resume-item-list">
-            <li><a href="#">Springfield Poker Club</a></li>
-            <li><a href="#">Springfield Donut Eater's User Group</a></li>
-          </ul>
-        </div>
-
-      </section>
-      <!-- end Links -->
-      {% endif %}
 
       <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
-        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
+        <p class="footer-line">2015, Ricardo Illescas Alfonso</p>
       </footer>
 
     </div>
