@@ -39,12 +39,52 @@
 
       </header>
 
+            {% if site.resume_section_skills %}
+      <!-- begin Skills -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Skills</h2>
+        </header>
+
+        <div class="resume-item">
+        <ul>
+            <li><h4 class="resume-item-title">Languages/Programming</h4>Java, C, C++, C#, Scala, JS</li>
+            <li><h4 class="resume-item-title">Systems</h4>Linux, Mac OS X, Windows</li>
+            <li><h4 class="resume-item-title">Game Development</h4>Unity3D, LibGDX, PlayN, Slick2D, Blender</li>
+          </ul>
+        </div>
+
+
+      </section>
+      <!-- end Skills -->
+      {% endif %}
+
+
+       {% if site.resume_section_education %}
+      
+      <!-- begin Education -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Education</h2>
+        </header>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">Universidad de San Carlos de Guatemala</h3>
+          <h4 class="resume-item-details">Ingeniería en Ciencias y Sistemas &bull; 2007 &mdash; 2015</h4>
+        </div>
+
+      </section>
+      <!-- end Education -->
+      
+      {% endif %}
+
       <!-- begin Experience -->
       <section class="content-section">
 
         <header class="section-header">
-          <h2>
-Experience</h2>
+          <h2>Experience</h2>
         </header>
 
    <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
@@ -94,77 +134,6 @@ Experience</h2>
       </section>
       <!-- end Experience -->
 
-      {% if site.resume_section_education %}
-      
-      <!-- begin Education -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Education</h2>
-        </header>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">Universidad de San Carlos de Guatemala</h3>
-          <h4 class="resume-item-details">Ingeniería en Ciencias y Sistemas &bull; 2007 &mdash; 2015</h4>
-        </div>
-
-      </section>
-      <!-- end Education -->
-      
-      {% endif %}
-
-      {% if site.resume_section_projects %}
-      <!-- begin Projects -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Game Jams</h2>
-        </header>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">Ludum Dare</h3>
-          <h4 class="resume-item-details">48 h Compo or 72 h jam </h4>
-          I have done a couple of games for the Ludum Dare, you can see my entries here:
-                    <p class="resume-item-copy"><img class="emoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f310.png" height="20" width="20" align="absmiddle"> 
-            <a href="http://ludumdare.com/compo/author/riktothepast/">Ludum Dare</a></p>
-          
-        </div>
-
-
-      </section>
-      <!-- end Projects -->
-      {% endif %}
-
-      {% if site.resume_section_skills %}
-      <!-- begin Skills -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Skills</h2>
-        </header>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Operating Systems</h4>
-          <p class="resume-item-copy">Proficient in the usage of </p>
-        <ul>
-            <li>Microsoft Windows.</li>
-            <li>Mac OS X (10.4 and above).</li>
-            <li>Debian-based Linux.</li>
-          </ul>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Languages</h4>
-          <ul>
-            <li>Native Spanish.</li>
-            <li>Technical level English.</li>
-          </ul>
-        </div>
-
-
-      </section>
-      <!-- end Skills -->
-      {% endif %}
 
       {% if site.resume_section_recognition %}
       <!-- begin Recognition -->
@@ -191,6 +160,32 @@ Experience</h2>
       </section>
       <!-- end Recognition -->
       {% endif %}
+
+
+      {% if site.resume_section_projects %}
+      <!-- begin Projects -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Other Projects</h2>
+        </header>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">Ludum Dare</h3>
+          <h4 class="resume-item-details">48 h Compo or 72 h jam </h4>
+          I have done a couple of games for the Ludum Dare, you can see my entries here:
+                    <p class="resume-item-copy"><img class="emoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f310.png" height="20" width="20" align="absmiddle"> 
+            <a href="http://ludumdare.com/compo/author/riktothepast/">Ludum Dare</a></p>
+          
+        </div>
+
+
+      </section>
+      <!-- end Projects -->
+      {% endif %}
+
+
+
 
 
       <footer class="page-footer">
